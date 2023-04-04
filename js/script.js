@@ -1,19 +1,13 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
-//
-// Created by: Mr. Coxall
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
-// Copyright (c) 2020 Mr. Coxall All rights reserved
-//
-// Created by: Mr. Coxall
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
 function enterClicked() {
   // input
-  const pay = document.getElementById("pay").value
-  const hours = document.getElementById("hours").value
+  const payPerHour = parseInt.getElementById("pay-per-hour").value
+  const hoursWorked = parseInt.getElementById("hours-worked").value
+
+  // process 
+  const totalSalary = payPerHour * hoursWorked
+  const governmentTakes = (payPerHour * hoursWorked) * 0.18
 
   // output
-  document.getElementById('pay').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
-  document.getElementById('pay').innerHTML = 'Your pay will be: $' + takeHomeSalary.toFixed(2)
+  document.getElementById("total-salary").innerHTML = "Your pay will be: " totalSalary "."
+  document.getElementById('government-takes').innerHTML = 'The government will take ' governmentTakes '.'
 }
