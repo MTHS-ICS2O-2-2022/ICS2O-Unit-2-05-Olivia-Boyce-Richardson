@@ -12,6 +12,6 @@ function calculate () {
   const taxes = (hours_worked * pay) *  0.18
 
   // output
-  document.getElementById('net-payment').innerHTML = `Your pay will be: $ ${net_payment.toFixed(2)}`
-  document.getElementById('tax').innerHTML = `the government will take: $ ${taxes.toFixed(2)}`
+  document.getElementById('net-payment').innerHTML = `Your pay will be: $${net_payment.toFixed(2)}`
+  document.getElementById('tax').innerHTML = `the government will take: $${taxes.toFixed(2)}`
 }
